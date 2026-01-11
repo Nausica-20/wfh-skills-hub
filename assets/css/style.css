@@ -251,4 +251,19 @@ section p {
   color: #ffffff;
   text-decoration: none;
 }
+/* =========================
+   CAREER BOX CTA
+========================= */
+.career-cta {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2fb170;
+}
+
+.career-cta:hover {
+  text-decoration: none;
+  color: #23a45f;
+}
 
