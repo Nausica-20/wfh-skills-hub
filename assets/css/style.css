@@ -7,14 +7,10 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: #1f2937;
-  background-color: #ffffff;
+  background: #ffffff;
   line-height: 1.6;
 }
 
@@ -37,6 +33,10 @@ a:hover {
   padding: 0 24px;
 }
 
+.main-content {
+  padding: 60px 0;
+}
+
 /* =========================
    HEADER
 ========================= */
@@ -53,26 +53,11 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
-  gap: 16px;
 }
 
 .logo {
   font-size: 1.4rem;
   font-weight: 800;
-  color: #2fb170;
-}
-
-.main-nav {
-  display: flex;
-  gap: 20px;
-}
-
-.main-nav a {
-  color: #374151;
-  font-weight: 600;
-}
-
-.main-nav a:hover {
   color: #2fb170;
 }
 
@@ -82,113 +67,56 @@ a:hover {
   padding: 10px 18px;
   border-radius: 6px;
   font-weight: 700;
-  white-space: nowrap;
-}
-
-.header-cta:hover {
-  opacity: 0.9;
-  text-decoration: none;
 }
 
 /* =========================
-   HERO
+   INTRO
 ========================= */
-.hero {
-  background: linear-gradient(135deg, #e8f7ef, #f4fbf8);
-  padding: 80px 24px;
-  text-align: center;
+.intro {
+  padding-bottom: 60px;
 }
 
-.hero h1 {
+.intro h1 {
   font-size: 2.6rem;
-  font-weight: 800;
+  margin-bottom: 16px;
   color: #0f172a;
-  margin-bottom: 20px;
 }
 
-.hero p {
-  font-size: 1.15rem;
-  color: #374151;
-  max-width: 700px;
-  margin: 0 auto 32px;
-}
-
-.primary-cta {
-  display: inline-block;
-  background: linear-gradient(135deg, #2fb170, #23a45f);
-  color: #ffffff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 700;
-}
-
-.primary-cta:hover {
-  opacity: 0.9;
-  text-decoration: none;
+.intro p {
+  max-width: 800px;
+  font-size: 1.1rem;
 }
 
 /* =========================
-   SECTIONS
+   HUB
 ========================= */
-section {
+.hub {
+  background: #f9fafb;
   padding: 80px 0;
 }
 
-section h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #0f172a;
-  margin-bottom: 20px;
-}
-
-section p {
-  font-size: 1.05rem;
-  color: #374151;
-  max-width: 800px;
-}
-
-/* =========================
-   LISTS
-========================= */
-.career-list,
-.blog-list {
-  list-style: none;
-  margin-top: 24px;
-}
-
-.career-list li,
-.blog-list li {
+.hub h2 {
+  font-size: 2.2rem;
   margin-bottom: 12px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-  .site-header .container {
-    flex-direction: column;
-  }
-
-  .main-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
+.hub-intro {
+  max-width: 800px;
+  margin-bottom: 40px;
 }
-/* =========================
-   CAREER BOXES
-========================= */
-.career-grid {
+
+.hub-section-title {
+  margin: 40px 0 20px;
+  font-size: 1.6rem;
+}
+
+.hub-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
-  margin-top: 40px;
 }
 
-.career-card {
+.hub-card {
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
@@ -196,21 +124,41 @@ section p {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.career-card:hover {
+.hub-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  text-decoration: none;
 }
 
-.career-card h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+.hub-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
   color: #0f172a;
 }
 
-.career-card p {
+.hub-card p {
   font-size: 0.95rem;
-  color: #374151;
+}
+
+/* =========================
+   CTA
+========================= */
+.hub-cta {
+  margin-top: 60px;
+  padding: 40px;
+  background: linear-gradient(135deg, #e8f7ef, #f4fbf8);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.primary-cta {
+  display: inline-block;
+  margin-top: 16px;
+  background: linear-gradient(135deg, #2fb170, #23a45f);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
 }
 
 /* =========================
@@ -219,124 +167,16 @@ section p {
 .site-footer {
   background: #0f172a;
   color: #d1d5db;
-  padding: 40px 0;
-  margin-top: 80px;
-}
-
-.site-footer .container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
+  padding: 32px 0;
   text-align: center;
-}
-
-.site-footer p {
   font-size: 0.9rem;
 }
 
-.footer-nav {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.footer-nav a {
-  color: #9ca3af;
-  font-size: 0.9rem;
-}
-
-.footer-nav a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
 /* =========================
-   CAREER BOX CTA
+   RESPONSIVE
 ========================= */
-.career-cta {
-  display: inline-block;
-  margin-top: 16px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #2fb170;
-}
-
-.career-cta:hover {
-  text-decoration: none;
-  color: #23a45f;
-}
-
-/* =========================
-   CONTENT HUB (PILLAR)
-========================= */
-
-.content-hub {
-  padding: 100px 0;
-}
-
-.hub-header {
-  max-width: 720px;
-  margin-bottom: 60px;
-}
-
-.hub-header h2 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  margin-bottom: 16px;
-  color: #0f172a;
-}
-
-.hub-header p {
-  font-size: 1.1rem;
-  color: #374151;
-}
-
-.hub-section-title {
-  font-size: 1.7rem;
-  font-weight: 800;
-  margin: 60px 0 24px;
-  color: #0f172a;
-}
-
-.hub-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-}
-
-.hub-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 24px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hub-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
-}
-
-.hub-card h4 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #0f172a;
-}
-
-.hub-card p {
-  font-size: 0.95rem;
-  color: #374151;
-  margin-bottom: 16px;
-}
-
-.hub-link {
-  font-weight: 700;
-  color: #2fb170;
-}
-
-.hub-link:hover {
-  color: #23a45f;
-  text-decoration: none;
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
 }
