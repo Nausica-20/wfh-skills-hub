@@ -194,3 +194,90 @@ a {
     font-size: 1.6rem;
   }
 }
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Titolo Articolo | WFH Skills Hub</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descrizione SEO dell’articolo">
+
+  <!-- CSS globale -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="article-header">
+  <div class="container header-nav">
+    <a href="../index.html">Home</a>
+    <a href="../pillar/work-from-home-skills.html">La Forza del Gruppo</a>
+    <a href="#" class="active">Eventi e Progetti</a>
+  </div>
+</header>
+
+<!-- ================= ARTICLE ================= -->
+<main class="article-container">
+
+  <article class="article-content">
+
+    <h1>Titolo principale dell’articolo</h1>
+
+    <p class="article-lead">
+      Questo è il paragrafo introduttivo. Deve spiegare subito il tema, con uno stile editoriale,
+      autorevole e chiaro, come un articolo di giornale o report istituzionale.
+    </p>
+
+    <p>
+      In cima alla lista dei lavoratori più richiesti oggi troviamo professioni che stanno
+      cambiando profondamente il mercato del lavoro. L’assenza di ricambio generazionale,
+      i mutamenti sociali e le politiche pubbliche hanno un impatto diretto.
+    </p>
+
+    <p>
+      Non si tratta solo di vocazioni differenti, ma di trasformazioni strutturali che
+      coinvolgono formazione, accesso al lavoro e diritti.
+    </p>
+
+    <h2>Proposte di intervento con focus su politiche attive e diritti</h2>
+
+    <p>
+      Negli ultimi anni la situazione è diventata emergenziale. Le politiche attive del lavoro
+      devono essere ripensate in chiave moderna, digitale e inclusiva.
+    </p>
+
+    <p>
+      La formazione online, le competenze trasferibili e l’accesso a percorsi certificati
+      rappresentano oggi una leva strategica fondamentale.
+    </p>
+
+    <blockquote>
+      “Investire in competenze significa investire in occupazione stabile e sostenibile.”
+    </blockquote>
+
+    <p>
+      Per approfondire i percorsi formativi disponibili, consulta la nostra
+      <a href="../pillar/work-from-home-skills.html">guida completa alle competenze per il lavoro da remoto</a>.
+    </p>
+
+    <div class="article-cta">
+      <h3>Vuoi iniziare subito?</h3>
+      <p>Scopri corsi gratuiti con certificazione riconosciuta.</p>
+      <a href="#" class="primary-cta">Scopri i corsi</a>
+    </div>
+
+  </article>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 WFH Skills Hub · Contenuti informativi</p>
+  </div>
+</footer>
+
+</body>
+</html>
