@@ -1,0 +1,287 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1f2937;
+  background: #ffffff;
+  line-height: 1.7;
+}
+
+a {
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================
+   HEADER
+========================= */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #16a34a;
+}
+
+.main-nav a {
+  color: #374151;
+  font-weight: 600;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  padding: 90px 0;
+  background: linear-gradient(135deg, #ecfdf5, #f0fdf4);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 32px;
+  font-size: 1.15rem;
+  color: #374151;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.primary-cta {
+  display: inline-block;
+  background: #16a34a;
+  color: #ffffff;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.primary-cta:hover {
+  background: #15803d;
+  text-decoration: none;
+}
+
+/* =========================
+   PILLAR HERO
+========================= */
+.pillar-hero {
+  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+  padding: 70px 0;
+  text-align: center;
+}
+
+.pillar-hero h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.pillar-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* =========================
+   HUB / PILLAR
+========================= */
+.hub {
+  padding: 80px 0;
+}
+
+.hub-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  margin-top: 60px;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+.hub-card {
+  padding: 26px;
+  border-radius: 18px;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.hub-card h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hub-card p {
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* === CARD COLORS === */
+.hub-card.beginner {
+  background: #ecfdf5;
+  border-color: #86efac;
+}
+
+.hub-card.courses {
+  background: #eff6ff;
+  border-color: #93c5fd;
+}
+
+.hub-card.careers {
+  background: #fefce8;
+  border-color: #fde047;
+}
+
+.hub-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   PILLAR CTA
+========================= */
+.pillar-cta {
+  margin-top: 90px;
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: #ffffff;
+}
+
+.pillar-cta h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.pillar-cta p {
+  max-width: 650px;
+  margin: 0 auto 28px;
+  font-size: 1.1rem;
+}
+
+.pillar-cta .primary-cta {
+  background: #ffffff;
+  color: #15803d;
+}
+
+.pillar-cta .primary-cta:hover {
+  background: #f0fdf4;
+}
+
+/* =========================
+   ARTICLE TEMPLATE
+========================= */
+.article {
+  padding: 80px 0;
+}
+
+.article h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.article h2 {
+  font-size: 1.9rem;
+  margin-top: 60px;
+  margin-bottom: 16px;
+}
+
+.article h3 {
+  font-size: 1.4rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  max-width: 760px;
+}
+
+.article ul {
+  margin: 20px 0 30px 20px;
+}
+
+.article li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+  background: #0f172a;
+  color: #cbd5f5;
+  padding: 40px 0;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .pillar-hero h2 {
+    font-size: 2rem;
+  }
+
+  .hub-title {
+    font-size: 1.6rem;
+  }
+}
