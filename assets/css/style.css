@@ -1,5 +1,5 @@
 /* =========================
-   RESET & BASE
+   RESET
 ========================= */
 * {
   margin: 0;
@@ -7,6 +7,9 @@
   box-sizing: border-box;
 }
 
+/* =========================
+   BASE
+========================= */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: #1f2937;
@@ -15,13 +18,8 @@ body {
 }
 
 a {
-  color: #2fb170;
   text-decoration: none;
-  font-weight: 600;
-}
-
-a:hover {
-  text-decoration: underline;
+  color: inherit;
 }
 
 /* =========================
@@ -33,26 +31,22 @@ a:hover {
   padding: 0 24px;
 }
 
-.main-content {
-  padding: 60px 0;
-}
-
 /* =========================
    HEADER
 ========================= */
 .site-header {
-  position: sticky;
-  top: 0;
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
   z-index: 1000;
 }
 
-.site-header .container {
+.header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
+  align-items: center;
+  padding: 18px 0;
 }
 
 .logo {
@@ -65,100 +59,116 @@ a:hover {
   background: linear-gradient(135deg, #2fb170, #23a45f);
   color: #ffffff;
   padding: 10px 18px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 700;
-}
-
-/* =========================
-   INTRO
-========================= */
-.intro {
-  padding-bottom: 60px;
-}
-
-.intro h1 {
-  font-size: 2.6rem;
-  margin-bottom: 16px;
-  color: #0f172a;
-}
-
-.intro p {
-  max-width: 800px;
-  font-size: 1.1rem;
 }
 
 /* =========================
    HUB
 ========================= */
 .hub {
-  background: #f9fafb;
   padding: 80px 0;
 }
 
-.hub h2 {
-  font-size: 2.2rem;
-  margin-bottom: 12px;
+.hub h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 16px;
 }
 
 .hub-intro {
+  font-size: 1.1rem;
   max-width: 800px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  color: #374151;
 }
 
+/* =========================
+   SECTIONS
+========================= */
 .hub-section-title {
-  margin: 40px 0 20px;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  margin-top: 60px;
 }
 
+/* =========================
+   GRID
+========================= */
 .hub-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
 }
 
+/* =========================
+   CARD
+========================= */
 .hub-card {
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 24px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 14px;
+  padding: 26px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.hub-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
-  text-decoration: none;
-}
-
-.hub-card h4 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+.hub-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
   color: #0f172a;
 }
 
 .hub-card p {
   font-size: 0.95rem;
+  color: #374151;
+}
+
+.hub-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   COURSES COLOR
+========================= */
+.hub-courses .hub-card {
+  background: linear-gradient(135deg, #e8f7ef, #f4fbf8);
+  border-color: #cdeedd;
+}
+
+.hub-courses .hub-card h3 {
+  color: #0f766e;
 }
 
 /* =========================
    CTA
 ========================= */
 .hub-cta {
-  margin-top: 60px;
-  padding: 40px;
-  background: linear-gradient(135deg, #e8f7ef, #f4fbf8);
-  border-radius: 16px;
+  margin-top: 80px;
+  padding: 50px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2fb170, #23a45f);
+  color: #ffffff;
   text-align: center;
 }
 
+.hub-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.hub-cta p {
+  margin-bottom: 24px;
+}
+
 .primary-cta {
-  display: inline-block;
-  margin-top: 16px;
-  background: linear-gradient(135deg, #2fb170, #23a45f);
-  color: #ffffff;
+  background: #ffffff;
+  color: #2fb170;
   padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: 700;
+  border-radius: 10px;
+  font-weight: 800;
 }
 
 /* =========================
@@ -167,16 +177,20 @@ a:hover {
 .site-footer {
   background: #0f172a;
   color: #d1d5db;
-  padding: 32px 0;
+  padding: 40px 0;
+  margin-top: 80px;
   text-align: center;
-  font-size: 0.9rem;
 }
 
 /* =========================
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
-  .intro h1 {
-    font-size: 2rem;
+  .hub h1 {
+    font-size: 2.1rem;
+  }
+
+  .hub-section-title {
+    font-size: 1.6rem;
   }
 }
